@@ -2,7 +2,7 @@
 <article>
     <a class="post_title" href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">{{ post.title }}</a>
     <div>
-        <!-- <time>{{ post.date | date: "%B %e, %Y" }}</time> -->
+        <time>{{ post.date | date: "%B %e, %Y" }}</time>
     </div>
 </article>
 {% endfor %}
