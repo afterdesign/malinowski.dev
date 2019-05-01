@@ -16,3 +16,7 @@ exclude:
     - node_modules/
     - package.json
     - CNAME
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-feed
