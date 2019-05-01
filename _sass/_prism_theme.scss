@@ -1,157 +1,157 @@
-/*
+/**
+ * VS theme by Andrew Lock (https://andrewlock.net)
+ * Inspired by Visual Studio syntax coloring
+ */
 
-Name:       Base16 Atelier Forest Light
-Author:     Bram de Haan (http://atelierbram.github.io/syntax-highlighting/atelier-schemes/forest)
+ code[class*="language-"],
+ pre[class*="language-"] {
+     color: #393A34;
+     font-family: "Consolas", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
+     direction: ltr;
+     text-align: left;
+     white-space: pre;
+     word-spacing: normal;
+     word-break: normal;
+     font-size: 0.95em;
+     line-height: 1.2em;
 
-Prism template by Bram de Haan (http://atelierbram.github.io/syntax-highlighting/prism/)
-Original Base16 color scheme by Chris Kempson (https://github.com/chriskempson/base16)
+     -moz-tab-size: 4;
+     -o-tab-size: 4;
+     tab-size: 4;
 
-*/
+     -webkit-hyphens: none;
+     -moz-hyphens: none;
+     -ms-hyphens: none;
+     hyphens: none;
+ }
 
-$codeFonts: Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;
-$codeFontSize: 0.875em;
-$codeLineHeight: 1.375;
+ pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+ code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+     background: #C1DEF1;
+ }
 
-code[class*="language-"],
-pre[class*="language-"] {
-  font-family: $codeFonts;
-  font-size: $codeFontSize;
-  line-height: $codeLineHeight;
-  direction: ltr;
-  text-align: left;
-  white-space: pre;
-  word-spacing: normal;
-  word-break: normal;
-  -moz-tab-size: 4;
-  -o-tab-size: 4;
-  tab-size: 4;
-  -webkit-hyphens: none;
-  -moz-hyphens: none;
-  -ms-hyphens: none;
-  hyphens: none;
-  background: #f1efee;
-  color: #68615e;
-}
+ pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+ code[class*="language-"]::selection, code[class*="language-"] ::selection {
+     background: #C1DEF1;
+ }
 
-pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
-code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
-  text-shadow: none;
-  background: #e6e2e0;
-}
+ /* Code blocks */
+ pre[class*="language-"] {
+     padding: 1em;
+     margin: .5em 0;
+     overflow: auto;
+     border: 1px solid #dddddd;
+     background-color: white;
+ }
 
-pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
-code[class*="language-"]::selection, code[class*="language-"] ::selection {
-  text-shadow: none;
-  background: #e6e2e0;
-}
+ /* Inline code */
+ :not(pre) > code[class*="language-"] {
+     padding: .2em;
+     padding-top: 1px; padding-bottom: 1px;
+     background: #f8f8f8;
+     border: 1px solid #dddddd;
+ }
 
-/* Code blocks */
-pre[class*="language-"] {
-  padding: 1em;
-  margin: .5em 0;
-  overflow: auto;
-}
+ .token.comment,
+ .token.prolog,
+ .token.doctype,
+ .token.cdata {
+     color: #008000; font-style: italic;
+ }
 
-/* Inline code */
-:not(pre) > code[class*="language-"] {
-  padding: .1em;
-  border-radius: .3em;
-}
+ .token.namespace {
+     opacity: .7;
+ }
 
-.token.comment,
-.token.prolog,
-.token.doctype,
-.token.cdata {
-  color: #9c9491;
-}
+ .token.string {
+     color: #A31515;
+ }
 
-.token.punctuation {
-  color: #68615e;
-}
+ .token.punctuation,
+ .token.operator {
+     color: #393A34; /* no highlight */
+ }
 
-.token.namespace {
-  opacity: .7;
-}
+ .token.url,
+ .token.symbol,
+ .token.number,
+ .token.boolean,
+ .token.variable,
+ .token.constant,
+ .token.inserted {
+     color: #36acaa;
+ }
 
-.token.operator,
-.token.boolean,
-.token.number {
-  color: #df5320;
-}
+ .token.atrule,
+ .token.keyword,
+ .token.attr-value,
+ .language-autohotkey .token.selector,
+ .language-json .token.boolean,
+ .language-json .token.number,
+ code[class*="language-css"]{
+     color: #0000ff;
+ }
 
-.token.property {
-  color: #c38418;
-}
+ .token.function {
+     color: #393A34;
+ }
+ .token.deleted,
+ .language-autohotkey .token.tag {
+     color: #9a050f;
+ }
 
-.token.tag {
-  color: #407ee7;
-}
+ .token.selector,
+ .language-autohotkey .token.keyword {
+     color: #00009f;
+ }
 
-.token.string {
-  color: #3d97b8;
-}
+ .token.important,
+ .token.bold {
+     font-weight: bold;
+ }
 
-.token.selector {
-  color: #6666ea;
-}
+ .token.italic {
+     font-style: italic;
+ }
 
-.token.attr-name {
-  color: #df5320;
-}
+ .token.class-name,
+ .language-json .token.property {
+     color: #2B91AF;
+ }
 
-.token.entity,
-.token.url,
-.language-css .token.string,
-.style .token.string {
-  color: #3d97b8;
-}
+ .token.tag,
+ .token.selector {
+     color: #800000;
+ }
 
-.token.attr-value,
-.token.keyword,
-.token.control,
-.token.directive,
-.token.unit {
-  color: #7b9726;
-}
+ .token.attr-name,
+ .token.property,
+ .token.regex,
+ .token.entity {
+     color: #ff0000;
+ }
 
-.token.statement,
-.token.regex,
-.token.atrule {
-  color: #3d97b8;
-}
+ .token.directive.tag  .tag {
+     background: #ffff00;
+     color: #393A34;
+ }
 
-.token.placeholder,
-.token.variable {
-  color: #407ee7;
-}
+ /* overrides color-values for the Line Numbers plugin
+  * http://prismjs.com/plugins/line-numbers/
+  */
+ .line-numbers .line-numbers-rows {
+   border-right-color: #a5a5a5;
+ }
 
-.token.deleted {
-  text-decoration: line-through;
-}
+ .line-numbers-rows > span:before {
+   color: #2B91AF;
+ }
 
-.token.inserted {
-  border-bottom: 1px dotted #1b1918;
-  text-decoration: none;
-}
-
-.token.italic {
-  font-style: italic;
-}
-
-.token.important,
-.token.bold {
-  font-weight: bold;
-}
-
-.token.important {
-  color: #f22c40;
-}
-
-.token.entity {
-  cursor: help;
-}
-
-pre > code.highlight {
-  outline: 0.4em solid #f22c40;
-  outline-offset: .4em;
-}
+ /* overrides color-values for the Line Highlight plugin
+ * http://prismjs.com/plugins/line-highlight/
+ */
+ .line-highlight {
+   background: rgba(193, 222, 241, 0.2);
+   background: -webkit-linear-gradient(left, rgba(193, 222, 241, 0.2) 70%, rgba(221, 222, 241, 0));
+   background: linear-gradient(to right, rgba(193, 222, 241, 0.2) 70%, rgba(221, 222, 241, 0));
+ }
