@@ -14,7 +14,7 @@ This time I'm going to list CLI tools.
 "Homebrew installs the stuff you need that Apple didn’t."
 In general this is package manager. I like it because I don't have to install packages with root privileges.
 
-##### [autojump](https://github.com/wting/autojump)
+##### <a href="https://github.com/wting/autojump" rel="noreferrer" aria-label="Autojump tool external URL">autojump</a>
 I have more then 50 repositories cloned to my ```~/Projects``` directory so using ```cd``` is a bit painfull. With autojump I can change directory even when I remember part of the path.
 ![autojump screenshot](/images/posts/6/autojump.png)
 
