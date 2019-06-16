@@ -20,18 +20,6 @@ main {
     flex-direction: column;
 }
 
-
-time {
-    display:block;
-    font-family: 'Philosopher', sans-serif;
-    font-weight: 700;
-    color: var(--title-color);
-    border-bottom: 1px solid red;
-    width: 250px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
-
 @keyframes pulse {
     0%, 100% {
     color: var(--links-font-color);
@@ -57,7 +45,6 @@ a:hover::after {
 article {
     display: flex;
     flex-direction: column;
-    margin-bottom: 100px;
 }
 
 article > a {
@@ -66,4 +53,12 @@ article > a {
     font-weight: 700;
     color: var(--title-color);
     margin-bottom: 10px;
+}
+
+.hr {
+    border-bottom: 1px solid var(--underline-color);
+    width: 250px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 100px;
 }

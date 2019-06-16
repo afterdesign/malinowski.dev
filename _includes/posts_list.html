@@ -1,8 +1,6 @@
 {% for post in site.posts %}
 <article>
     <a class="post_title" href="{{ post.url | prepend: site.baseurl | prepend: site.url }}" aria-label="{{ post.title }}">{{ post.title }}</a>
-    <div>
-        <time>{{ post.date | date: "%B %e, %Y" }}</time>
-    </div>
 </article>
+<div class='hr'></div>
 {% endfor %}
