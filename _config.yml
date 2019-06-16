@@ -4,7 +4,7 @@ description: "Rafał Malinowski dev thoughts"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://malinowski.dev"
 
-permalink: "/:year/:month/:day/:title.html"
+permalink: ":title.html"
 
 # Build settings
 markdown: kramdown
