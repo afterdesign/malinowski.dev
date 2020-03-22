@@ -25,16 +25,32 @@ section > article {
     justify-content: space-around;
 }
 
-p {
-    margin-bottom: 90px;
+ol, p {
+    margin-bottom: 15px;
     width: var(--text-element-width);
     line-height: 1.4;
     margin-left: var(--text-element-margin);
 }
 
+ol {
+    list-style: decimal-leading-zero;
+}
+
+ul {
+    list-style: inside;
+}
+
 h1, h5 {
     font-size: 2em;
     margin-bottom: 24px;
+    width: var(--text-element-width);
+    margin-left: var(--text-element-margin);
+}
+
+h2 {
+    margin-top: 30px;
+    font-size: 1.5em;
+    margin-bottom: 10px;
     width: var(--text-element-width);
     margin-left: var(--text-element-margin);
 }
